@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Julius+Sans+One|Open+Sans|Teko');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.panel-body  {
+    word-break: break-all
+}
+
+.navbar {
+  height: 5vw;
+  background: linear-gradient(to right, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 50%);
+}
+
+.navbar .singleDropdown {
+    display: none;
+    align: right;
+}
+
+.dropdown-toggle {
+  top: 0.8vw;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    background: rgba(0,0,0,0.4) 37%;
+  }
+  .navbar .ognavbar     {
+    display: none;
+  }
+  .navbar .singleDropdown {
+    display: inline-block;
+  }
+}
+
+.navbar-header {
+    font-family: 'Anton', sans-serif;
+    font-size: 2vw;
+    padding-top: 1.5vw;
+    color: white;
+}
+
+.navlink {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8vw;
+    padding-top: 0.8vw;
+    color: white;
+}
+
+.btn {
+  background: none;
+  color: white;
+  font-size: 20px;
+}
+
+.dropdown-menu {
+  align-items: center;
+  top: 5vw;
+  border-style: none;
+  background-color: rgba(255,255,255,0.7);
+  color: white;
+}
+
+#carousel-item {
+    text-align: center;
+    width: 100%
+}
+
+.carousel-inner {
+    width: 100%
+}
+
+.carousel-item {
+  width: 100%
+}
+
+#graphic1 {
+    height: 45vw;
+    background-image: url('../media/homepage.jpg');
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+    padding: 120px 0;
+
+}
+
+@keyframes reduce {
+    from {font-size: 6.5vw;}
+    to {font-size: 4vw;}
+}
+
+#graphic1a {
+  animation-name: reduce;
+  animation-duration: 4s;
+  font-size: 4vw;
+}
+
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(3vw);
+        transform: translateX(3vw);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-3vw);
+       transform: translateX(-3vw);
+    }
+    50%
+    {
+        -webkit-transform: translateX(1.5vw);
+        transform: translateX(1.5vw);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-1.5vw);
+        transform: translateX(-1.5vw);
+    }
+    80%
+    {
+        -webkit-transform: translateX(1vw);
+        transform: translateX(1vw);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes swing
+{
+  15%
+  {
+      -webkit-transform: translateX(2vw);
+      transform: translateX(2vw);
+  }
+  30%
+  {
+      -webkit-transform: translateX(-2vw);
+     transform: translateX(-2vw);
+  }
+  50%
+  {
+      -webkit-transform: translateX(1.5vw);
+      transform: translateX(1.5vw);
+  }
+  65%
+  {
+      -webkit-transform: translateX(-1.5vw);
+      transform: translateX(-1.5vw);
+  }
+  80%
+  {
+      -webkit-transform: translateX(1vw);
+      transform: translateX(1vw);
+  }
+  100%
+  {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+}
+
+#graphic1b:hover {
+  -webkit-animation: swing 2s ease;
+  animation: swing 2s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+#graphic1c {
+  -webkit-transition: background-color 0.7s; /* Safari */
+  transition: background-color 0.7s;
+}
+
+#graphic1c:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#home-graphic {
+  list-style: none;
+}
+
+.graphic-lines {
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 1vw;
+}
+
+.graphic-description {
+  padding: 4vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-family: 'Teko', sans-serif;
+  font-size: 2vw;
+  color: rgba(255,255,255,0.5);
+}
+
+.graphic-description2 {
+  padding: 4vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-family: 'Teko', sans-serif;
+  font-size: 2vw;
+  color: inherit;
+}
+
+.graphicHeader {
+  font-family: 'Teko', sans-serif;
+  font-size: 3vw;
+  text-align: center;
+  padding-bottom: 3vw;
+  text-decoration: underline;
+}
+
+#graphic2 {
+    height: 700px;
+    padding: 5vw;
+}
+
+.card {
+  padding: 3vw;
+  border-style: dashed;
+  border-color: #508991;
+}
+
+.card-btn {
+  color: inherit;
+}
+
+#footer {
+    height: 200px;
+    background-color: #172A3A;
+    bottom: 0;
+}
+
+.footing {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.7vw;
+
+  padding-top: 160px;
+  color: rgba(255, 255, 255, 0.3);
+}
