@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Halisr Reg';
-  src: url(/webfonts/halisr-regular-webfont.ttf) format('truetype');
+  src: url('/static/css/webfonts/halisr-regular-webfont.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Halisr Bold';
