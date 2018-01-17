@@ -10,11 +10,11 @@
 }
 @font-face {
   font-family: 'Halisr Light';
-  src: url(static/css/webfonts/halisr-extralight-webfont.ttf) format('truetype');
+  src: url(/webfonts/halisr-extralight-webfont.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Halisr Black';
-  src: url(static/css/webfonts/halisr-black-webfont.ttf) format('truetype');
+  src: url(/webfonts/halisr-black-webfont.ttf) format('truetype');
 }
 
 
@@ -98,7 +98,7 @@ h3{
 }
 
 #graphic1 {
-    background-image: url('static/media/homepage.png');
+    background-image: url('/../media/homepage.png');
     text-align: center;
     margin: auto;
     padding: 120px 0;
