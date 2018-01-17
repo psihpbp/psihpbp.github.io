@@ -98,7 +98,7 @@ h3{
 }
 
 #graphic1 {
-    background-image: url('/../media/homepage.png');
+    background-image: url('/static/media/homepage.png');
     text-align: center;
     margin: auto;
     padding: 120px 0;
