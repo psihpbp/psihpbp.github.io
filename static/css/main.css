@@ -107,7 +107,7 @@ h3{
     text-align: center;
     margin: auto;
     padding: 120px 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .reduceGraphic {
@@ -228,7 +228,7 @@ h3{
   font-family: 'Halisr Light';
   font-size: 1.8vw;
   color: white;
-  background-color: rgba(0,0,0,0.15);
+  background-color: rgba(0,0,0,0.3);
 }
 
 .graphic-description2 {
