@@ -57,7 +57,7 @@ h3{
 
 .navbar-header {
     font-family: 'Halisr Black';
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: white;
     margin-left: 1em;
     margin-top: 0.8em;
@@ -306,11 +306,6 @@ h3{
     bottom: 0;
 }
 
-.hyperlink {
-  text-decoration: underline;
-  color: blue;
-}
-
 #psigroup {
   padding: 1em;
   width: 80vw;
@@ -331,6 +326,11 @@ a {
 a:hover{
   text-decoration: inherit;
   color: inherit;
+}
+
+.hyperlink {
+  text-decoration: underline;
+  color: blue;
 }
 
 .footing {
