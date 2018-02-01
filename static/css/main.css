@@ -30,7 +30,7 @@ h3{
 }
 
 .navbar {
-  height: 5em;
+  height: 5vw;
   background: rgba(0,0,0,0.2);
 }
 
@@ -59,7 +59,7 @@ h3{
     font-family: 'Halisr Black';
     color: white;
     margin-left: 1em;
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin-top: 0.8em;
     text-transform: uppercase;
 }
@@ -338,8 +338,6 @@ a:hover{
   font-size: 1.3em;
   color: rgba(255, 255, 255, 0.5);
   margin: 5vw;
-  line-height: 3vh;
   padding-left: 2vw;
-  line-height: 1vh;
   border-left: 3px dashed rgba(255, 255, 255, 0.5);
 }
