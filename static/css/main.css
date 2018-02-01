@@ -75,6 +75,10 @@ h3{
     color: white;
 }
 
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
 .btn {
   background: none;
   color: white;
@@ -246,8 +250,6 @@ h3{
   color: #35b254;
 }
 
-
-
 #graphic2 {
     padding: 5vw;
     background-color: #E7E7E6;
@@ -302,6 +304,11 @@ h3{
     height: 22vw;
     background-color: #172A3A;
     bottom: 0;
+}
+
+.hyperlink {
+  text-decoration: underline;
+  color: blue;
 }
 
 #psigroup {
