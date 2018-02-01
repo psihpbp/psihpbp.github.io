@@ -30,7 +30,7 @@ h3{
 }
 
 .navbar {
-  height: 5vw;
+  height: 5em;
   background: linear-gradient(to right, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 50%);
 }
 
@@ -57,10 +57,15 @@ h3{
 
 .navbar-header {
     font-family: 'Halisr Black';
-    font-size: 1.8em;
-    padding-top: 1.5vw;
+    font-size: 1.6em;
     color: white;
+    margin-left: 1em;
+    margin-top: 0.8em;
     text-transform: uppercase;
+}
+
+.navbar-right {
+  margin-right: 1em;
 }
 
 .navlink {
