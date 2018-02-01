@@ -263,7 +263,8 @@ h3{
   text-align: center;
   font-size: 1.5em;
   padding: 0.5em;
-  margin-bottom: 4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding-right: 2vw;
   margin-right: -5vw;
 }
@@ -337,7 +338,7 @@ a:hover{
   font-size: 1.3em;
   color: rgba(255, 255, 255, 0.5);
   margin: 5vw;
-  line-height: 2vw;
+  line-height: 2em;
   padding-left: 2vw;
   border-left: 3px dashed rgba(255, 255, 255, 0.5);
 }
