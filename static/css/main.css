@@ -59,7 +59,7 @@ h3{
     font-family: 'Halisr Black';
     color: white;
     margin-left: 1em;
-    font-size: 10vw;
+    font-size: 3vw;
     margin-top: 0.8em;
     text-transform: uppercase;
 }
@@ -338,7 +338,7 @@ a:hover{
   font-size: 1.3em;
   color: rgba(255, 255, 255, 0.5);
   margin: 5vw;
-  line-height: 2vh;
+  line-height: 3vh;
   padding-left: 2vw;
   line-height: 1vh;
   border-left: 3px dashed rgba(255, 255, 255, 0.5);
