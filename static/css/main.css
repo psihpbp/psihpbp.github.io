@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Julius+Sans+One|Open+Sans|Teko');
 
 @font-face {
-  font-family: 'Halisr Reg';
-  src: url('/static/css/webfonts/halisr-regular-webfont.ttf') format('truetype');
+    font-family: 'Halisr Reg';
+    src: url('/static/css/webfonts/halisr-regular-webfont.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Halisr Bold';
-  src: url('/static/css/webfonts/halisr-bold-webfont.ttf') format('truetype');
+    font-family: 'Halisr Bold';
+    src: url('/static/css/webfonts/halisr-bold-webfont.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Halisr Light';
-  src: url('/static/css/webfonts/halisr-extralight-webfont.ttf') format('truetype');
+    font-family: 'Halisr Light';
+    src: url('/static/css/webfonts/halisr-extralight-webfont.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Halisr Black';
-  src: url('/static/css/webfonts/halisr-black-webfont.ttf') format('truetype');
+    font-family: 'Halisr Black';
+    src: url('/static/css/webfonts/halisr-black-webfont.ttf') format('truetype');
 }
 
 
@@ -23,15 +23,15 @@ body {
 }
 
 h3{
-  font-family: 'Halisr Reg';
+    font-family: 'Halisr Reg';
 }
+
 .panel-body  {
     word-break: break-all
 }
 
 .navbar {
-  height: 5vw;
-  background: rgba(0,0,0,0.2);
+
 }
 
 .navbar .singleDropdown {
@@ -40,57 +40,56 @@ h3{
 }
 
 .dropdown-toggle {
-  top: 0.8vw;
+
 }
 
 @media (max-width: 800px) {
-  .navbar {
-    background: rgba(0,0,0,0.4) 37%;
-  }
-  .navbar .ognavbar     {
-    display: none;
-  }
-  .navbar .singleDropdown {
-    display: inline-block;
-  }
+    .navbar .ognavbar     {
+        display: none;
+    }
+    .navbar .singleDropdown {
+        display: inline-block;
+    }
 }
 
 .navbar-header {
     font-family: 'Halisr Black';
     color: white;
-    margin-left: 1vw;
-    font-size: 2.5vw;
-    margin-top: 0.8vw;
+    font-size: 2vw;
     text-transform: uppercase;
+    display: inline-block;
+}
+
+.container-fluid {
+    margin: 10px;
 }
 
 .navbar-right {
-  margin-right: 1em;
+    font-size: 1.8vw;
+    text-align: right;
 }
 
 .navlink {
     font-family: 'Halisr Light';
-    font-size: 1.5vw;
-    padding-top: 0.8vw;
     color: white;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: white;
+    color: white;
 }
 
 .btn {
-  background: none;
-  color: white;
-  font-size: 20px;
+    background: none;
+    color: white;
+    font-size: 20px;
 }
 
 .dropdown-menu {
-  align-items: center;
-  top: 5vw;
-  border-style: none;
-  background-color: rgba(255,255,255,0.7);
-  color: white;
+    align-items: center;
+    border-style: none;
+    background-color: rgba(255,255,255,0.7);
+    color: white;
+    font-size: 1.5vw;
 }
 
 #carousel-item {
@@ -103,7 +102,7 @@ h3{
 }
 
 .carousel-item {
-  width: 100%
+    width: 100%
 }
 
 #graphic1 {
@@ -115,8 +114,8 @@ h3{
 }
 
 .reduceGraphic {
-  font-size: 6.5vw;
-  font-family: 'Halisr Reg';
+    font-size: 6.5vw;
+    font-family: 'Halisr Reg';
 }
 
 @keyframes reduce {
@@ -125,9 +124,9 @@ h3{
 }
 
 .graphic1a {
-  animation-name: reduce;
-  animation-duration: 4s;
-  font-size: 4vw;
+    animation-name: reduce;
+    animation-duration: 4s;
+    font-size: 4vw;
 }
 
 
@@ -141,7 +140,7 @@ h3{
     30%
     {
         -webkit-transform: translateX(-3vw);
-       transform: translateX(-3vw);
+        transform: translateX(-3vw);
     }
     50%
     {
@@ -167,48 +166,48 @@ h3{
 
 @keyframes swing
 {
-  15%
-  {
-      -webkit-transform: translateX(2vw);
-      transform: translateX(2vw);
-  }
-  30%
-  {
-      -webkit-transform: translateX(-2vw);
-     transform: translateX(-2vw);
-  }
-  50%
-  {
-      -webkit-transform: translateX(1.5vw);
-      transform: translateX(1.5vw);
-  }
-  65%
-  {
-      -webkit-transform: translateX(-1.5vw);
-      transform: translateX(-1.5vw);
-  }
-  80%
-  {
-      -webkit-transform: translateX(1vw);
-      transform: translateX(1vw);
-  }
-  100%
-  {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-  }
+    15%
+    {
+        -webkit-transform: translateX(2vw);
+        transform: translateX(2vw);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-2vw);
+        transform: translateX(-2vw);
+    }
+    50%
+    {
+        -webkit-transform: translateX(1.5vw);
+        transform: translateX(1.5vw);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-1.5vw);
+        transform: translateX(-1.5vw);
+    }
+    80%
+    {
+        -webkit-transform: translateX(1vw);
+        transform: translateX(1vw);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 #graphic1b:hover {
-  -webkit-animation: swing 2s ease;
-  animation: swing 2s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+    -webkit-animation: swing 2s ease;
+    animation: swing 2s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
 
 #graphic1c {
-  -webkit-transition: background-color 0.7s; /* Safari */
-  transition: background-color 0.7s;
+    -webkit-transition: background-color 0.7s; /* Safari */
+    transition: background-color 0.7s;
 }
 
 #graphic1c:hover {
@@ -216,7 +215,7 @@ h3{
 }
 
 #home-graphic {
-  list-style: none;
+    list-style: none;
 }
 
 .graphic-lines {
@@ -226,28 +225,28 @@ h3{
 }
 
 .graphic-description {
-  margin-top: 4vw;
-  margin-left: 8vw;
-  margin-right: 8vw;
-  font-family: 'Halisr Light';
-  font-size: 1.8vw;
-  color: white;
-  background-color: rgba(0,0,0,0.3);
+    margin-top: 4vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    font-family: 'Halisr Light';
+    font-size: 1.8vw;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
 }
 
 .graphic-description2 {
-  padding-left: 5vw;
-  padding-right: 5vw;
-  font-family: 'Halisr Light';
-  font-size: 1.5em;
-  color: inherit;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-family: 'Halisr Light';
+    font-size: 1.5em;
+    color: inherit;
 }
 
 .graphicHeader {
-  font-family: 'Halisr Bold', sans-serif;
-  font-size: 3vw;
-  margin-bottom: 1vw;
-  color: #35b254;
+    font-family: 'Halisr Bold', sans-serif;
+    font-size: 3vw;
+    margin-bottom: 1vw;
+    color: #35b254;
 }
 
 #graphic2 {
@@ -256,37 +255,37 @@ h3{
 }
 
 .fact{
-  padding-right: 900;
-  background-color: #e5f442;
-  color: black;
-  font-family: 'Halisr Reg';
-  text-align: center;
-  font-size: 1.5vw;
-  padding: 0.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  padding-right: 2vw;
-  margin-right: -5vw;
+    padding-right: 900;
+    background-color: #e5f442;
+    color: black;
+    font-family: 'Halisr Reg';
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 0.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding-right: 2vw;
+    margin-right: -5vw;
 }
 
 .conestudy{
-  text-align: center;
-  margin-bottom: -2vw;
+    text-align: center;
+    margin-bottom: -2vw;
 }
 
 .bol{
-  font-family: 'HalisR Bold';
-  display: inline;
+    font-family: 'HalisR Bold';
+    display: inline;
 }
 
 .card {
-  padding: 3vw;
-  border-style: dashed;
-  border-color: #508991;
+    padding: 3vw;
+    border-style: dashed;
+    border-color: #508991;
 }
 
 .card-btn {
-  color: inherit;
+    color: inherit;
 }
 
 #graphic3 {
@@ -307,37 +306,37 @@ h3{
 }
 
 #psigroup {
-  padding: 1em;
-  width: 80vw;
-  text-align: center;
+    padding: 1em;
+    width: 80vw;
+    text-align: center;
 }
 
 .logo{
-  height: 7vw;
-  width: 7vw;
-  margin-bottom: 1vw;
+    height: 7vw;
+    width: 7vw;
+    margin-bottom: 1vw;
 }
 
 a {
-  text-decoration: inherit;
-  color: inherit;
+    text-decoration: inherit;
+    color: inherit;
 }
 
 a:hover{
-  text-decoration: inherit;
-  color: inherit;
+    text-decoration: inherit;
+    color: inherit;
 }
 
 .hyperlink {
-  text-decoration: underline;
-  color: blue;
+    text-decoration: underline;
+    color: blue;
 }
-
+/* ORGANIZE THIS */
 .footing {
-  font-family: 'HalisR Light';
-  font-size: 1.3em;
-  color: rgba(255, 255, 255, 0.5);
-  margin: 5vw;
-  padding-left: 2vw;
-  border-left: 3px dashed rgba(255, 255, 255, 0.5);
+    font-family: 'HalisR Light';
+    font-size: 1.3em;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 5vw;
+    padding-left: 2vw;
+    border-left: 3px dashed rgba(255, 255, 255, 0.5);
 }
