@@ -64,7 +64,19 @@
   background-image: url('../media/bio-page/headshots/Jiaqi.jpg');
 }
 
-#bioJohn, #bioDeima, #bioLinda, #bioDanielle, #bioJiaqi {
+#picKriza {
+  background-image: url('../media/bio-page/headshots/Kriza.jpg');
+}
+
+#picClaudia {
+  background-image: url('../media/bio-page/headshots/Claudia.jpg');
+}
+
+#picMax {
+  background-image: url('../media/bio-page/headshots/Max.jpg');
+}
+
+#bioJohn, #bioDeima, #bioLinda, #bioDanielle, #bioJiaqi, #bioClaudia, #bioKriza, #bioMax {
   font-family: 'Halisr Light';
   display: none;
   color: black;
@@ -93,6 +105,18 @@
 }
 
 #picJiaqi:hover #bioJiaqi{
+  display: block;
+}
+
+#picKriza:hover #bioKriza{
+  display: block;
+}
+
+#picClaudia:hover #bioClaudia{
+  display: block;
+}
+
+#picMax:hover #bioMax{
   display: block;
 }
 

@@ -12,52 +12,57 @@
     </head>
 
     <body>
-      <nav class="navbar navbar-default navbar-fixed-top">
-              <div class="container ognavbar">
-                      <a href="index.html">
-                        <div class="navbar-header">
-                          PSI Hyde Park Business Partnership
-                        </div>
-                      </a>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid nav-container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a href="index.html">
+            <div class="navbar-header">
+              PSI Hyde Park Business Partnership
+            </div>
+          </a>
+        </div>
 
-                      <ul class="nav navbar-nav navbar-right">
-                        <li class="navlink"><a href="why_it_matters.html">Why It Matters</a></li>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                        <li class="dropdown">
-                          <a class="dropdown-toggle navlink" data-toggle="dropdown" href="#">
-                            Who We Are <span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li class="navlink"><a href="consultants.html">Consultants</a></li>
-                            <li class="navlink"><a href="#">PSI</a></li>
-                          </ul>
-                        </li>
+          <!-- code for the right side of the navbar -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navlink"><a href="#graphic2">Why It Matters</a></li>
 
-                        <li class="dropdown">
-                          <a class="dropdown-toggle navlink" data-toggle="dropdown" href="services.html">
-                            Our Services <span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li class="navlink"><a href="#">Page 1-1</a></li>
-                            <li class="navlink"><a href="#">Page 1-2</a></li>
-                            <li class="navlink"><a href="#">Page 1-3</a></li>
-                          </ul>
-                        </li>
+            <!-- OUR SERVICES DROPDOWN -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle navlink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Our Services
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="navlink" href="#consultation">Consultation</a></li>
+                <li><a class="navlink" href="#process">Process</a></li>
 
-                      </ul>
-                    </div>
+              </ul>
+            </li>
+            <!-- ABOUT US DROPDOWN -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle navlink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Who We Are <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="navlink"><a href="#graphic3">PSI</a></li>
+                <li class="navlink"><a href="consultants.html">Consultants</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
 
-                      <div class="dropdown singleDropdown">
-                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        &#9776;
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item" type="button">Action</button>
-                        <button class="dropdown-item" type="button">Another action</button>
-                        <button class="dropdown-item" type="button">Something else here</button>
-                      </div>
-                    </div>
+      </div><!-- /.container-fluid -->
 
-          </nav>
 
+    </nav>
       <div id="graphic1" class="container-fluid">
         <div class="graphic-lines">
           Meet the Consultants
@@ -90,9 +95,7 @@
                       <img class="connect-icon" src="/static/media/bio-page/email-icon.png">
                     </a>
                     &nbsp;
-                    <a href="#">
-                      <img class="connect-icon" src="/static/media/bio-page/linkedin_icon.png">
-                    </a>
+
                   </div>
                 </div>
               </div>
@@ -114,9 +117,7 @@
                       <img class="connect-icon" src="/static/media/bio-page/email-icon.png">
                     </a>
                     &nbsp;
-                    <a href="#">
-                      <img class="connect-icon" src="/static/media/bio-page/linkedin_icon.png">
-                    </a>
+
                   </div>
                 </div>
               </div>
@@ -148,9 +149,7 @@
                     <img class="connect-icon" src="/static/media/bio-page/email-icon.png">
                   </a>
                   &nbsp;
-                  <a href="#">
-                    <img class="connect-icon" src="/static/media/bio-page/linkedin_icon.png">
-                  </a>
+
                 </div>
               </div>
             </div>
@@ -172,9 +171,7 @@
                     <img class="connect-icon" src="/static/media/bio-page/email-icon.png">
                   </a>
                   &nbsp;
-                  <a href="#">
-                    <img class="connect-icon" src="/static/media/bio-page/linkedin_icon.png">
-                  </a>
+
                 </div>
               </div>
             </div>
@@ -187,7 +184,7 @@
 
         </div>
 
-<!-- Jiaqi -->
+<!-- Jiaqi and Kriza -->
         <div class="row graphic-row">
             <div class="col-sm-5">
               <div class="card">
@@ -205,16 +202,32 @@
                       <img class="connect-icon" src="/static/media/bio-page/email-icon.png">
                     </a>
                     &nbsp;
-                    <a href="#">
-                      <img class="connect-icon" src="/static/media/bio-page/linkedin_icon.png">
-                    </a>
+
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-5">
+          <div class="col-sm-5">
+            <div class="card">
+              <div class="card-block">
+                <div class="card-pic" id="picKriza">
+                  <div id="bioKriza">
+                    <span>
+                  Kriza Sy is a third-year Biology major in the College. She is especially interested in sharing accessible ways consumers can practice sustainable lifestyles and redirecting and repurposing various forms of waste. Last year, Kriza led a project in making student-run cafes on the University campus more sustainable and she looks forward to branching out with this experience into the broader Hyde Park business community.
+                    </span>
+                  </div>
+                </div>
+                <h3 class="card-title">Kriza Sy</h3>
+                <div class="card-text">
+                  <a href="mailto:ksy@uchicago.edu">
+                    <img class="connect-icon" src="/static/media/bio-page/email-icon.png">
+                  </a>
+
+                </div>
+              </div>
             </div>
+          </div>
 
             <div class="col-sm-1">
               <div class="decor">
@@ -223,6 +236,63 @@
 
           </div>
 
+    <!-- Claudia and Max -->
+    <div class="row graphic-row">
+      <div class="col-sm-5">
+        <div class="card">
+          <div class="card-block">
+            <div class="card-pic" id="picClaudia">
+              <div id="bioClaudia">
+                  <span>
+                  Claudia Yanos is a first-year in the college and a prospective Computational and Applied Mathematics and Geophysical Sciences Major.  Having grown up on a New York City block with five different community gardens, she is well-steeped in knowledge about sustainable practices for the urban environment.  Especially after working at NASA’s Climate Change Research Initiative, she is enthused about Environmental Science, and committed to helping businesses reach their sustainable practice implementation goals.
+                  </span>
+              </div>
+            </div>
+            <h3 class="card-title">Claudia Yanos</h3>
+            <div class="card-text">
+              <a href="mailto:cyanos@uchicago.edu">
+                <img class="connect-icon" src="/static/media/bio-page/email-icon.png">
+              </a>
+              &nbsp;
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-5">
+        <div class="card">
+          <div class="card-block">
+            <div class="card-pic" id="picMax">
+              <div id="bioMax">
+                  <span>
+                    Max Lopez is a third-year Environmental Studies and Global Studies double major. He is interested in the intersection between business and environmental policy and will be pursuing further studies in environmental law after graduation.
+                  </span>
+              </div>
+            </div>
+            <h3 class="card-title">Max Lopez</h3>
+            <div class="card-text">
+              <a href="mailto:mlopezus@gmail.com">
+                <img class="connect-icon" src="/static/media/bio-page/email-icon.png">
+              </a>
+              &nbsp;
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1">
+        <div class="decor">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!--
+    Kriza Sy is a third-year Biology major in the College. She is especially interested in sharing accessible ways consumers can practice sustainable lifestyles and redirecting and repurposing various forms of waste. Last year, Kriza led a project in making student-run cafes on the University campus more sustainable and she looks forward to branching out with this experience into the broader Hyde Park business community.
+    -->
 <br><br><br>
 
 

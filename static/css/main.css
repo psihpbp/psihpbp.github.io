@@ -67,12 +67,12 @@ h3{
     margin-bottom: 0;
 }
 
-.container-fluid {
+.nav-container {
     margin: 10px;
 }
 
 .navbar-right {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     padding: 0;
     text-align: right;
     vertical-align: middle;
@@ -267,7 +267,7 @@ h3{
     font-family: 'Halisr Light';
     font-size: 1.8vw;
     color: white;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .graphic-description2 {
