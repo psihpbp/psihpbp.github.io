@@ -62,8 +62,6 @@ $(document).ready( function() {
             drone_video.style.filter = "blur(4px)";
 
             if ($(window).scrollTop() > 400) {
-                $("#video-text").hide();
-                $("#contact").hide();
                 if ($(window).scrollTop() > 684) {
                     $("#learn_more").addClass("fixed-top");
                     document.getElementById("learn_more").style.marginBottom = "0";
@@ -73,9 +71,6 @@ $(document).ready( function() {
                 }
                 $("#bottomnav").hide();
             }else{
-
-                $("#video-text").show();
-                $("#contact").show();
                 $("#learn_more").removeClass("fixed-top");
             }
 
