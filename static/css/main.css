@@ -60,7 +60,9 @@ video {
 
   #why_matters h2 {
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+  #why_matters li {
+    margin-bottom: 1vw; } }
 #learn_more-mobile {
   display: none; }
 
@@ -96,8 +98,8 @@ video {
   margin-top: 1vw; }
   #mission p {
     text-align: center;
-    margin-left: 15vw;
-    margin-right: 15vw; }
+    padding-left: 10vw;
+    padding-right: 10vw; }
 
 .quote {
   display: block;
@@ -392,8 +394,8 @@ video {
 
 #why_matters {
   background-color: ghostwhite;
-  padding-left: 15vw;
-  padding-right: 15vw; }
+  padding-left: 10vw;
+  padding-right: 10vw; }
   #why_matters h1 {
     text-align: center; }
   #why_matters .row {

@@ -80,6 +80,9 @@ video {
             margin-left: 0;
             margin-right: 0;
         }
+        li {
+            margin-bottom: 1vw;
+        }
     }
 }
 
@@ -138,8 +141,8 @@ video {
     margin-top: 1vw;
     p {
         text-align: center;
-        margin-left: 15vw;
-        margin-right: 15vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 }
 
@@ -531,9 +534,8 @@ video {
 
 #why_matters {
     background-color: ghostwhite;
-    padding-left: 15vw;
-    padding-right: 15vw;
-
+    padding-left: 10vw;
+    padding-right: 10vw;
     h1 {
         text-align: center;
     }
