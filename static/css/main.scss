@@ -72,16 +72,26 @@ video {
     #learn_more-mobile {
         display: block;
     }
+    #mission {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        p {
+            text-align: left;
+        }
+    }
     .psiofficial {
         display: none;
     }
     #why_matters {
         h2 {
-            margin-left: 0;
-            margin-right: 0;
+            width: 100%;
         }
         li {
-            margin-bottom: 1vw;
+            margin-bottom: 2vw;
+        }
+        .quote {
+            padding-top: 1vw;
+            padding-bottom: 1vw;
         }
     }
 }
@@ -141,8 +151,8 @@ video {
     margin-top: 1vw;
     p {
         text-align: center;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        padding-left: 15vw;
+        padding-right: 15vw;
     }
 }
 

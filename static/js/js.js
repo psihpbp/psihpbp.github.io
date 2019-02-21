@@ -69,7 +69,6 @@ $(document).ready( function() {
                     $("#learn_more").removeClass("fixed-top");
                     document.getElementById("learn_more").style.marginBottom = "-2vh";
                 }
-                $("#bottomnav").hide();
             }else{
                 $("#learn_more").removeClass("fixed-top");
             }
