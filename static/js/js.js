@@ -63,6 +63,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
 }
 
+if (isMobile){
+    document.getElementById("learn_more").style.display = "none";
+}
+
 $(document).ready( function() {
     if (isMobile == false){
 	$(window).scroll(function() {
