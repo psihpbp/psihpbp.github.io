@@ -55,7 +55,7 @@
     ];
 
     const svg = d3.select('svg');
-    const svgContainer = d3.select('#container');
+    const svgContainer = d3.select('#containerg');
     
     const margin = 80;
     const width = 1000 - 2 * margin;
