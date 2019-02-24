@@ -68,31 +68,31 @@ if (isMobile){
 }
 
 $(document).ready( function() {
-    if (isMobile == false){
-	$(window).scroll(function() {
-            if ($(window).scrollTop() > 20) {
-		$("#bottomnav").hide();
-		drone_video.style.filter = "blur(4px)";
+    // if (isMobile == false){
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 20) {
+	    $("#bottomnav").hide();
+	    drone_video.style.filter = "blur(4px)";
 
-		if ($(window).scrollTop() > 400) {
-                    if ($(window).scrollTop() > 684) {
-			$("#learn_more").addClass("fixed-top");
-			document.getElementById("learn_more").style.marginBottom = "0";
-                    }else{
-			$("#learn_more").removeClass("fixed-top");
-			document.getElementById("learn_more").style.marginBottom = "-2vh";
-                    }
-		}else{
-                    $("#learn_more").removeClass("fixed-top");
-		}
+	    if ($(window).scrollTop() > 400) {
+                if ($(window).scrollTop() > 684) {
+		    $("#learn_more").addClass("fixed-top");
+		    document.getElementById("learn_more").style.marginBottom = "0";
+                }else{
+		    $("#learn_more").removeClass("fixed-top");
+		    document.getElementById("learn_more").style.marginBottom = "-2vh";
+                }
+	    }else{
+                $("#learn_more").removeClass("fixed-top");
+	    }
 
-            }else{
-		$("#bottomnav").show();
-		drone_video.style.filter = "none";
-            }
+        }else{
+	    $("#bottomnav").show();
+	    drone_video.style.filter = "none";
+        }
 
-	});
-    }
+    });
+    //}
 });
 
 
