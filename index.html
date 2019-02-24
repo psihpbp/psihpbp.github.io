@@ -6,11 +6,11 @@
     <link rel="shortcut icon" href="../static/media/favicon.ico">
     <link type="text/css" rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="/static/css/main.css?version=8">
+    <link type="text/css" rel="stylesheet" href="/static/css/graph.css">
     <script type="text/javascript" src="/static/js/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/static/js/oridomi.min.js"></script>
     <script type="text/javascript" src="/static/js/d3js.min.js"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
     <title>PSI Hyde Park Business Partnership</title>
 </head>
 
@@ -131,7 +131,16 @@
 
 <div id='layout'>
 	<div id='container'>
-		<svg />
+		<svg><svg />
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script> 
+			var svgWidth = 500;
+			var svgHeight = 300;
+			var svg = d3.select('svg')
+			.attr("width", svgWidth)
+			.attr("height", svgHeight)
+			attr("class", "bar-chart");
+		</script>
 	</div>
 </div>
 
