@@ -68,6 +68,7 @@ if (isMobile){
 }
 
 $(document).ready( function() {
+    start();
     // if (isMobile == false){
     $(window).scroll(function() {
         if ($(window).scrollTop() > 20) {
