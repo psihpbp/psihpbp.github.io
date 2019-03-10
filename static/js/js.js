@@ -68,6 +68,8 @@ if (isMobile){
 }
 
 $(document).ready( function() {
+    window.clearInterval(autopager);
+    autopager = 0;
     start();
     // if (isMobile == false){
     $(window).scroll(function() {
