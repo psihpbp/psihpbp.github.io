@@ -44,8 +44,11 @@ function start(){
 }
 
 $(window).focus(function() {
-    if (!autopager)
-        start();
+    window.clearInterval(autopager);
+    autopager = 0;
+    if (!autopager){
+        requestAnimationFrame(start);
+    }
 });
 
 $(window).blur(function() {
@@ -68,9 +71,7 @@ if (isMobile){
 }
 
 $(document).ready( function() {
-    window.clearInterval(autopager);
-    autopager = 0;
-    start();
+    requestAnimationFrame(start);
     // if (isMobile == false){
     $(window).scroll(function() {
         if ($(window).scrollTop() > 20) {
