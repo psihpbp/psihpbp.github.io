@@ -108,8 +108,8 @@ video {
         //margin: 0;
         padding: 0;
         min-height: 8vh;
-        background: linear-gradient(to bottom right, #0fb758 40%, #10a4b7 60%);
-        margin-bottom: -2vh;
+        background: linear-gradient(to right, #0fb758 40%, #10a4b7 60%);
+        margin-bottom: -2.2vh;
 
         li {
             float: left;
@@ -189,7 +189,7 @@ video {
     color: darkgreen;
     padding: 20px;
     display: inline-block;
-    background-image: linear-gradient(to bottom, white, transparent);
+    background-color: white;
     min-width: 60vw;
     position: absolute;
     left: 50%;
