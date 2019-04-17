@@ -1,60 +1,62 @@
 /* Animation for typewriter effect on the homepage */
 
-
-var wordbank = ["Greener", "Renewable", "Brighter", "Cleaner", "Sustainable", "Better"];
-var wlength = wordbank.length;
-
-var videotext = document.getElementById("video-text");
-var round = 0;
-var count = 0;
-var word = wordbank[count];
-var display = word;
-
-videotext.innerHTML = "Building a " + word + " Future";
-
-var autopager;
-var innerLoop;
-
-
-function start(){
-    autopager = setInterval(function() {
-        round = 0;
-        var copyIndex = -1;
-
-        innerLoop = setInterval(function() {
-            if (round == 0){
-                display = display.slice(0, -1);
-            }
-            if (round == 1){
-                copyIndex += 1;
-                display = word.slice(0, copyIndex);
-            }
-            if (copyIndex == word.length){
-                clearInterval(innerLoop);
-            }
-            videotext.innerHTML = "Building a " + display + " Future";
-            if (display.length == 0){
-                copyIndex = 0;
-                count += 1;
-                word = wordbank[(count) % wlength];
-                round = 1;
-            }
-        }, 75);
-    }, 3000);
-}
-
-$(window).focus(function() {
-    window.clearInterval(autopager);
-    autopager = 0;
-    if (!autopager){
-        requestAnimationFrame(start);
-    }
-});
-
-$(window).blur(function() {
-    window.clearInterval(autopager);
-    autopager = 0;
-});
+// var wordbank = ["Greener", "Renewable", "Brighter", "Cleaner", "Sustainable", " Better", "Smarter"];
+// var wlength = wordbank.length;
+//
+// var videotext = document.getElementById("video-text");
+// var round = 0;
+// var count = 0;
+// var word = wordbank[count];
+// var display = word;
+//
+// videotext.innerHTML = word;
+//
+// var autopager;
+// var innerLoop;
+//
+//
+// function start(){
+//     autopager = setInterval(function() {
+//         round = 0;
+//         var copyIndex = -1;
+//
+//         innerLoop = setInterval(function() {
+//             if (round == 0){
+//                 display = display.slice(0, -1);
+//             }
+//             if (round == 1){
+//                 copyIndex += 1;
+//                 display = word.slice(0, copyIndex);
+//             }
+//             if (copyIndex == word.length){
+//                 clearInterval(innerLoop);
+//             }
+//             if (videotext.innerHTML.length == 0 || display.length == 0)
+//                 videotext.innerHTML = "<br>";
+//             else
+//                 videotext.innerHTML = display;
+//             if (display.length == 0){
+//                 copyIndex = 0;
+//                 count += 1;
+//                 word = wordbank[(count) % wlength];
+//                 round = 1;
+//             }
+//         }, 75);
+//     }, 3000);
+// }
+//
+// $(window).focus(function() {
+//     window.clearInterval(autopager);
+//     autopager = 0;
+//     if (!autopager){
+//         requestAnimationFrame(start);
+//     }
+// });
+//
+// $(window).blur(function() {
+//     window.clearInterval(autopager);
+//     autopager = 0;
+// });
 
 
 var drone_video = document.getElementById("drone-video");
@@ -70,47 +72,40 @@ if (isMobile){
     document.getElementById("learn_more").style.display = "none";
 }
 
+
 $(document).ready( function() {
-    requestAnimationFrame(start);
+    // requestAnimationFrame(start);
     // if (isMobile == false){
+    var offsets = document.getElementById('footer').getBoundingClientRect();
     $(window).scroll(function() {
         if ($(window).scrollTop() > 20) {
-	    $("#bottomnav").hide();
-	    drone_video.style.filter = "blur(4px)";
+            drone_video.style.filter = "blur(1px)";
+            document.getElementById("learn_more").style.backgroundImage = "linear-gradient(to right, #0fb758 20%, #10a4b7 40%)";
+            $("#learn_more").addClass("fixed-top");
 
-	    if ($(window).scrollTop() > 400) {
-                if ($(window).scrollTop() > 684) {
-		    $("#learn_more").addClass("fixed-top");
-		    document.getElementById("learn_more").style.marginBottom = "0";
-                }else{
-		    $("#learn_more").removeClass("fixed-top");
-		    document.getElementById("learn_more").style.marginBottom = "-2vh";
-                }
-	    }else{
+            if ($(window).scrollTop() > offsets.top - 50){
                 $("#learn_more").removeClass("fixed-top");
-	    }
+            }
 
         }else{
-	    $("#bottomnav").show();
-	    drone_video.style.filter = "none";
+            drone_video.style.filter = "none";
+            document.getElementById("learn_more").style.backgroundImage = "none";
         }
-
     });
-    //}
 });
 
 
-(function() {
-    var folded = new OriDomi('.psiofficial', {
-        vPanels: 6,
-        ripple: true,
-        speed: 1200,
-        shadingIntensity: 2,    // lessen the shading effect
-        perspective: 800
-    });
-
-    setTimeout(function () {
-        folded.accordion(50);
-    }, 1000);
-}).call(this);
+// (function() {
+//     var folded = new OriDomi('.psiofficial', {
+//         vPanels: 6,
+//         ripple: true,
+//         speed: 1200,
+//         shadingIntensity: 2,    // lessen the shading effect
+//         perspective: 800
+//     });
+//
+//     setTimeout(function () {
+//         folded.accordion(50);
+//     }, 1000);
+// }).call(this);
 
