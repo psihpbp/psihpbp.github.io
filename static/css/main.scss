@@ -21,7 +21,14 @@ html {
 
 body {
     font-family: 'Halisr Reg', sans-serif;
-    overflow-x: hidden;
+
+    .contents {
+        overflow-x: hidden;
+    }
+}
+
+.mobile {
+    display: none;
 }
 
 .outer-container {
@@ -41,11 +48,12 @@ body {
         color: white;
         text-shadow: 10px 10px 2px #26272d;
         z-index: 1;
+        line-height: 1.5;
     }
 
 
     video {
-        z-index: -1;
+        z-index: -2;
     }
 
     #drone-video {
@@ -75,19 +83,19 @@ body {
         ul {
             text-align: center;
             list-style-type: none;
-            padding-top: 0.8vw;
-            min-height: 4vh;
+            padding-top: 0.5vh;
+            height: 7vh;
 
             li {
                 z-index: 100;
                 display: inline-block;
                 font-size: 2vw;
-                padding-bottom: 0.8vw;
+                padding-bottom: 0.3vh;
 
                 a {
                     color: white;
                     text-align: center;
-                    padding: 16px 16px;
+                    padding: 12px 12px;
                     text-decoration: none;
                 }
 
@@ -99,17 +107,16 @@ body {
             }
 
             li:hover {
-                border-bottom: 8px solid lightgreen;
+                border-bottom: 5px solid lightgreen;
             }
 
         }
-
     }
 }
 
 
 .section {
-    padding: 3vw 20vw 2vw 20vw;
+    padding: 5vw 20vw 5vw 20vw;
     text-align: left;
     color: black;
     background-color: white;
@@ -181,29 +188,60 @@ body {
     bottom: 0;
 }
 
+
 @media only screen and (max-width: 800px) {
-    #mission {
-        padding-left: 5vw;
-        padding-right: 5vw;
-        p {
-            text-align: left;
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .outer-container {
+        .hey {
+            left: 0;
+            right: 0;
+            top: 30vh;
+            padding: 0;
+            font-size: 11vw;
+            line-height: 2.5;
+            z-index: -1;
+        }
+
+        #menu {
+            position: absolute;
+            top: 5vw;
+            right: 5vw;
+            color: white;
+            z-index: 15;
+        }
+
+        #menu_show {
+            display: none;
+            width: 100vw;
+            background-color: #26272d;
+            z-index: 4;
+            padding-bottom: 5vh;
+
+            .row_container {
+                padding-top: 10vh;
+                right: 0;
+
+                .row {
+                    text-align: center;
+                    color: white;
+                    font-size: 3vh;
+                    display: block;
+                    margin: 1vh;
+                }
+            }
         }
     }
 
-    #why_matters {
-        h2 {
-            width: 100%;
-        }
-        li {
-            margin-bottom: 2vw;
-        }
-        .quote {
-            padding-top: 1vw;
-            padding-bottom: 1vw;
-        }
+    .section {
+        padding: 10vw 10vw 5vw 10vw;
     }
 
-    .hey {
-        font-size: 7vw;
-    }
 }
