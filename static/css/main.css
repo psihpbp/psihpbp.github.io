@@ -38,6 +38,12 @@ body {
     text-shadow: 10px 10px 2px #26272d;
     z-index: 1;
     line-height: 1.5; }
+  .outer-container #scroll {
+    color: white;
+    height: 100vh;
+    text-align: center;
+    z-index: 0;
+    transform: translateY(70vh); }
   .outer-container video {
     z-index: -2; }
   .outer-container #drone-video {
@@ -56,43 +62,63 @@ body {
     height: 7vw;
     right: 0;
     bottom: 0;
-    margin: 2vw; }
+    margin: 2vw;
+    z-index: 10; }
   .outer-container #learn_more {
-    z-index: 20; }
+    z-index: 20;
+    color: white; }
     .outer-container #learn_more ul {
       text-align: center;
       list-style-type: none;
-      padding-top: 0.5vh;
-      height: 7vh; }
+      padding-top: 1.3vw;
+      padding-bottom: 0.7vw; }
       .outer-container #learn_more ul li {
         z-index: 100;
+        text-align: center;
         display: inline-block;
         font-size: 2vw;
         padding-bottom: 0.3vh; }
         .outer-container #learn_more ul li a {
-          color: white;
           text-align: center;
-          padding: 12px 12px;
-          text-decoration: none; }
+          margin: 50px 50px;
+          text-decoration: none;
+          color: inherit; }
         .outer-container #learn_more ul li .active {
           font-size: 2.5vw;
           color: lightgoldenrodyellow;
           text-shadow: 3px 3px grey; }
       .outer-container #learn_more ul li:hover {
         border-bottom: 5px solid lightgreen; }
+        .outer-container #learn_more ul li:hover .active {
+          border-bottom: none; }
 
 .section {
-  padding: 5vw 20vw 5vw 20vw;
+  padding: 5vw 20vw 1vw 20vw;
   text-align: left;
   color: black;
   background-color: white;
   position: static;
   min-width: 100%;
-  z-index: 8; }
+  z-index: 2; }
   .section h1 {
     font-family: 'Halisr Bold';
     text-align: center;
     padding: 2vw; }
+
+#why_matters .right {
+  padding: 0;
+  padding-right: 7vw; }
+#why_matters .left {
+  padding: 0;
+  padding-left: 7vw; }
+#why_matters img {
+  max-height: 350px;
+  padding-left: 2vw; }
+
+#values {
+  text-align: center; }
+  #values h2 {
+    color: #0fb758; }
 
 .quote {
   display: block;
@@ -124,12 +150,16 @@ body {
     text-align: left; }
 
 #footer {
-  height: 100vh;
+  font-family: 'Halisr Bold';
+  height: 70vh;
   width: 100vw;
   background-color: #26272d;
-  bottom: 0; }
+  bottom: 0;
+  border-top: solid 5vh #0fb758;
+  color: white;
+  text-align: left; }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .desktop {
     display: none; }
 
@@ -139,11 +169,18 @@ body {
   .outer-container .hey {
     left: 0;
     right: 0;
-    top: 30vh;
+    top: 20vh;
     padding: 0;
     font-size: 11vw;
     line-height: 2.5;
-    z-index: -1; }
+    z-index: -1; } }
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .outer-container .hey {
+    font-size: 9vw;
+    line-height: 1.8; } }
+@media only screen and (max-width: 1000px) {
+  .outer-container #scroll {
+    transform: translateY(90vh); }
   .outer-container #menu {
     position: absolute;
     top: 5vw;

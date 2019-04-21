@@ -82,10 +82,8 @@ document.getElementById('menu').addEventListener("click", function(){
     var display = document.getElementById('menu_show').style.display;
     if (display == 'none' || display == ""){
         document.getElementById('menu_show').style.display = "block";
-        console.log(display);
     } else {
         document.getElementById('menu_show').style.display = "none";
-        console.log(display);
     }
 });
 
@@ -99,17 +97,24 @@ $(document).ready( function() {
     var offsets = document.getElementById('footer').getBoundingClientRect();
     $(window).scroll(function() {
         if ($(window).scrollTop() > 20) {
-            drone_video.style.filter = "blur(1px)";
-            document.getElementById("learn_more").style.backgroundImage = "linear-gradient(to right, #0fb758 20%, #10a4b7 40%)";
+            drone_video.style.filter = "blur(2px)";
+            document.getElementById("scroll").style.display = "none";
+            document.getElementById("learn_more").style.color = "#26272d";
+            document.getElementById("learn_more").style.boxShadow = "3px 3px 3px #D3D3D3"
+            document.getElementById("learn_more").style.backgroundColor = "white";
             $("#learn_more").addClass("fixed-top");
 
-            if ($(window).scrollTop() > offsets.top - 50){
-                $("#learn_more").removeClass("fixed-top");
-            }
+            // if ($(window).scrollTop() > offsets.top - 50){
+            //     $("#learn_more").removeClass("fixed-top");
+            // }
 
         }else{
             drone_video.style.filter = "none";
-            document.getElementById("learn_more").style.backgroundImage = "none";
+            document.getElementById("learn_more").style.color = "white";
+            document.getElementById("learn_more").style.boxShadow = "";
+            document.getElementById("learn_more").style.backgroundColor = "transparent";
+
+
         }
     });
 });
