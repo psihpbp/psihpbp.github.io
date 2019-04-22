@@ -127,7 +127,7 @@ body {
     #values .row .card img {
       width: 15vw;
       border-radius: 50%;
-      box-shadow: 3px 3px 3px grey; }
+      box-shadow: 5px 5px 5px grey; }
     #values .row .card img:hover {
       width: 18vw; }
   #values h2 {
@@ -151,10 +151,9 @@ body {
   #clients img {
     margin: 10px; }
   #clients .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
+    background-color: white;
+    width: 100%;
+    margin: 2vw;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */ }
   #clients .flip-card-inner {
@@ -172,11 +171,11 @@ body {
     height: 100%;
     backface-visibility: hidden; }
   #clients .flip-card-front {
-    background-color: #bbb;
     color: black; }
   #clients .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    text-align: center;
+    background-color: white;
+    color: black;
     transform: rotateY(180deg); }
 
 #who_we_are {
