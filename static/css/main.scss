@@ -173,22 +173,27 @@ body {
     text-align: center;
 
     .row{
+        text-align: center;
+
         a:hover{
             text-decoration: none;
         }
         .card{
+            text-align: center;
             text-align: left;
-            padding: 5px;
+            padding: 20px;
             border: none;
 
             img {
-                width: 15vw;
+                width: 200px;
+                height: 200px;
                 border-radius: 50%;
                 box-shadow: 5px 5px 5px grey;
             }
 
             img:hover {
-                width: 18vw;
+                width: 230px;
+                height: 230px;
             }
         }
 
@@ -222,6 +227,7 @@ body {
     .flip-card {
         background-color: white;
         width: 100%;
+        height: 10vh;
         margin: 2vw;
         //height: 200px;
         //border: 1px solid #f1f1f1;
@@ -231,6 +237,7 @@ body {
     /* This container is needed to position the front and back side */
     .flip-card-inner {
         position: relative;
+        background-color: white;
         width: 100%;
         height: 100%;
         text-align: center;
@@ -253,6 +260,7 @@ body {
 
     /* Style the front side (fallback if image is missing) */
     .flip-card-front {
+        background-color: white;
         color: black;
     }
 
@@ -295,14 +303,14 @@ body {
 
 #footer {
     font-family: 'Halisr Bold';
-    height: 50vh;
+    height: 60vh;
     width: 100vw;
     background-color: #26272d;
+
     bottom: 0;
     border-top: solid 5vh #10a4b7;
     color: white;
     text-align: left;
-    padding-bottom: 10vh;
 
     #contact {
         display: inline-block;
