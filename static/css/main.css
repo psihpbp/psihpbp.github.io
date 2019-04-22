@@ -70,8 +70,8 @@ body {
     .outer-container #learn_more ul {
       text-align: center;
       list-style-type: none;
-      padding-top: 1.3vw;
-      padding-bottom: 0.7vw; }
+      padding-top: 1vw;
+      padding-bottom: 0.4vw; }
       .outer-container #learn_more ul li {
         z-index: 100;
         text-align: center;
@@ -118,6 +118,18 @@ body {
 
 #values {
   text-align: center; }
+  #values .row a:hover {
+    text-decoration: none; }
+  #values .row .card {
+    text-align: left;
+    padding: 5px;
+    border: none; }
+    #values .row .card img {
+      width: 15vw;
+      border-radius: 50%;
+      box-shadow: 3px 3px 3px grey; }
+    #values .row .card img:hover {
+      width: 18vw; }
   #values h2 {
     color: #0fb758; }
 
@@ -129,9 +141,43 @@ body {
   padding: 1vw; }
 
 #clients {
-  color: black; }
+  color: black;
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the front side (fallback if image is missing) */
+  /* Style the back side */ }
   #clients img {
     margin: 10px; }
+  #clients .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */ }
+  #clients .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d; }
+  #clients .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); }
+  #clients .flip-card-front, #clients .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; }
+  #clients .flip-card-front {
+    background-color: #bbb;
+    color: black; }
+  #clients .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg); }
 
 #who_we_are {
   background-color: white;
@@ -158,9 +204,10 @@ body {
   width: 100vw;
   background-color: #26272d;
   bottom: 0;
-  border-top: solid 5vh #0fb758;
+  border-top: solid 5vh #10a4b7;
   color: white;
-  text-align: left; }
+  text-align: left;
+  padding-bottom: 10vh; }
   #footer #contact {
     display: inline-block;
     margin: 10px;
