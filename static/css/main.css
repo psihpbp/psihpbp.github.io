@@ -88,6 +88,7 @@ body {
           color: lightgoldenrodyellow;
           text-shadow: 3px 3px grey; }
       .outer-container #learn_more ul li:hover {
+        padding-bottom: -5px;
         border-bottom: 5px solid lightgreen; }
         .outer-container #learn_more ul li:hover .active {
           border-bottom: none; }
@@ -128,7 +129,9 @@ body {
   padding: 1vw; }
 
 #clients {
-  color: white; }
+  color: black; }
+  #clients img {
+    margin: 10px; }
 
 #who_we_are {
   background-color: white;
@@ -151,13 +154,21 @@ body {
 
 #footer {
   font-family: 'Halisr Bold';
-  height: 70vh;
+  height: 50vh;
   width: 100vw;
   background-color: #26272d;
   bottom: 0;
   border-top: solid 5vh #0fb758;
   color: white;
   text-align: left; }
+  #footer #contact {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #0fb758;
+    z-index: 10; }
+  #footer #contact:hover {
+    background-color: #10a4b7; }
 
 @media only screen and (max-width: 1000px) {
   .desktop {

@@ -118,6 +118,7 @@ body {
             }
 
             li:hover {
+                padding-bottom: -5px;
                 border-bottom: 5px solid lightgreen;
 
                 .active {
@@ -195,9 +196,9 @@ body {
 }
 
 #clients {
-    color: white;
+    color: black;
     img {
-        //margin: 1vh;
+        margin: 10px;
     }
 }
 
@@ -231,13 +232,25 @@ body {
 
 #footer {
     font-family: 'Halisr Bold';
-    height: 70vh;
+    height: 50vh;
     width: 100vw;
     background-color: #26272d;
     bottom: 0;
     border-top: solid 5vh #0fb758;
     color: white;
     text-align: left;
+
+    #contact {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        background-color: #0fb758;
+        z-index: 10;
+    }
+
+    #contact:hover {
+        background-color: #10a4b7;
+    }
 }
 
 
