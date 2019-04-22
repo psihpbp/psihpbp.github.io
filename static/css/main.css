@@ -21,6 +21,13 @@ body {
 .mobile {
   display: none; }
 
+@keyframes float {
+  0% {
+    transform: translateY(72vh); }
+  50% {
+    transform: translateY(71vh); }
+  100% {
+    transform: translateY(72vh); } }
 .outer-container {
   position: relative;
   width: 100vw;
@@ -43,7 +50,8 @@ body {
     height: 100vh;
     text-align: center;
     z-index: 0;
-    transform: translateY(70vh); }
+    animation: float 2s ease-in-out infinite;
+    transform: translateY(72vh); }
   .outer-container video {
     z-index: -2; }
   .outer-container #drone-video {
