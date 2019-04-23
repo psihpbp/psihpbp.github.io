@@ -341,6 +341,7 @@ body {
             padding: 0;
             font-size: 11vw;
             line-height: 2.5;
+            z-index: 1;
         }
 
         #logo {
@@ -368,19 +369,26 @@ body {
             top: 5vw;
             right: 5vw;
             color: white;
-            z-index: 15;
+            -webkit-transform:translate3d(0,0,1);
+            transform: translate3d(0, 0, 0);
+            position: absolute;
+            z-index: 12;
         }
 
         #menu_show {
             display: none;
             width: 100vw;
             background-color: #26272d;
-            z-index: 4;
+            -webkit-transform:translate3d(0,0,1);
+            transform: translate3d(0, 0, 0);
+            position: absolute;
+            z-index: 10;
             padding-bottom: 5vh;
 
             .row_container {
                 padding-top: 10vh;
                 right: 0;
+                z-index: 100;
 
                 .row {
                     text-align: center;
