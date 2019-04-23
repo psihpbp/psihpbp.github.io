@@ -6,14 +6,14 @@
     font-family: 'Halisr Bold';
     src: url('/static/css/webfonts/halisr-bold-webfont.ttf') format('truetype');
 }
-@font-face {
-    font-family: 'Halisr Light';
-    src: url('/static/css/webfonts/halisr-extralight-webfont.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Halisr Black';
-    src: url('/static/css/webfonts/halisr-black-webfont.ttf') format('truetype');
-}
+//@font-face {
+//    font-family: 'Halisr Light';
+//    src: url('/static/css/webfonts/halisr-extralight-webfont.ttf') format('truetype');
+//}
+//@font-face {
+//    font-family: 'Halisr Black';
+//    src: url('/static/css/webfonts/halisr-black-webfont.ttf') format('truetype');
+//}
 
 html {
     scroll-behavior: smooth;
@@ -43,25 +43,25 @@ body {
     }
 }
 
+.hey {
+    font-family: 'Halisr Bold';
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+    padding: 2vw;
+    font-size: 6vw;
+    color: white;
+    text-shadow: 10px 10px 2px #26272d;
+    z-index: 1;
+    line-height: 1.5;
+}
+
 .outer-container {
     position: relative;
     width: 100vw;
     height: 100vh;
-
-    .hey {
-        font-family: 'Halisr Bold';
-        position: absolute;
-        top: 20%;
-        left: 25%;
-        right: 25%;
-        text-align: center;
-        padding: 2vw;
-        font-size: 6vw;
-        color: white;
-        text-shadow: 10px 10px 2px #26272d;
-        z-index: 1;
-        line-height: 1.5;
-    }
 
     #scroll {
         color: white;
@@ -192,8 +192,7 @@ body {
             text-decoration: none;
         }
         .card{
-            text-align: center;
-            text-align: left;
+            align-items: center;
             padding: 20px;
             border: none;
 
@@ -350,14 +349,21 @@ body {
             padding: 0;
             font-size: 11vw;
             line-height: 2.5;
-            z-index: -1;
         }
 
+        #logo {
+            display: none;
+        }
 
+        // Tablet sized
         @media only screen and (min-width: 600px) {
             .hey {
                 font-size: 9vw;
                 line-height: 1.8;
+            }
+
+            #logo {
+                display: block;
             }
         }
 
