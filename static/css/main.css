@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Halisr Reg';
+  font-family: "Halisr Reg";
   src: url("/static/css/webfonts/halisr-regular-webfont.ttf") format("truetype"); }
 @font-face {
-  font-family: 'Halisr Bold';
+  font-family: "Halisr Bold";
   src: url("/static/css/webfonts/halisr-bold-webfont.ttf") format("truetype"); }
 html {
   scroll-behavior: smooth; }
