@@ -30,7 +30,8 @@ html, body, .content {
   margin-top: 10vh; }
 
 .energy .outer-container {
-  background-color: yellow; }
+  background-color: yellow;
+  height: 135vh; }
 @media only screen and (max-width: 900px) {
   .energy .outer-container {
     height: 165vh; }
@@ -52,15 +53,15 @@ html, body, .content {
   .food .outer-container {
     height: 100vh; }
   .food .heading {
-    font-size: 4vh; } }
+    font-size: 6vh; } }
 
 .waste .outer-container {
   background-color: #ff8528;
-  font-size: 9vh; }
-@media only screen and (max-width: 90px) {
+  height: 90vh; }
+@media only screen and (max-width: 900px) {
   .waste .outer-container {
     height: 100vh; }
     .waste .outer-container .heading {
-      max-font-size: 5vh; } }
+      font-size: 6vh; } }
 
 /*# sourceMappingURL=sub.css.map */

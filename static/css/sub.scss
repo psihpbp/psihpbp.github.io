@@ -58,7 +58,7 @@ html, body, .content {
   .outer-container {
     background-color: yellow;
     //height: 100vh;
-    //height: 135vh;
+    height: 135vh;
 
     }
 
@@ -99,7 +99,7 @@ html, body, .content {
       height: 100vh;
     }
     .heading{
-      font-size: 4vh;
+      font-size: 6vh;
     }
   }
 }
@@ -108,15 +108,15 @@ html, body, .content {
 .waste {
   .outer-container {
     background-color: #ff8528;
-    font-size: 9vh;
+    height: 90vh;
   }
 
-  @media only screen and (max-width: 90px) {
+  @media only screen and (max-width: 900px) {
     .outer-container {
       height: 100vh;
 
       .heading{
-        max-font-size: 5vh;
+        font-size: 6vh;
       }
     }
   }
