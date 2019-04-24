@@ -1,19 +1,41 @@
+.outer-container {
+  #learn_more{
 
+    ul {
+      li {
+        color: black;
+      }
 
+      .active {
+        text-shadow: 3px 3px 3px black;
+      }
 
-  .intro {
-    top: 8vh;
-    position: absolute;
-    padding: 10vw;
-    position: absolute;
-    line-height: 25px;
+      li:hover {
+        border-bottom: 5px solid grey;
+
+        .active {
+          border-bottom: none;
+        }
+      }
+    }
+
   }
 
-  .heading {
-    color: white;
-    text-shadow: 5px 5px 5px grey;
-    //padding-left: -5vw;
-  }
+}
+
+.intro {
+  top: 8vh;
+  position: absolute;
+  padding: 10vw;
+  position: absolute;
+  line-height: 25px;
+}
+
+.heading {
+  color: white;
+  text-shadow: 5px 5px 5px grey;
+  //padding-left: -5vw;
+}
 
 
 
@@ -32,29 +54,7 @@
     height: 105vh;
     //height: 135vh;
 
-    #learn_more{
-
-      ul {
-        li {
-          color: black;
-        }
-
-        .active {
-          text-shadow: 3px 3px black;
-        }
-
-        li:hover {
-          border-bottom: 5px solid grey;
-
-          .active {
-            border-bottom: none;
-          }
-        }
-      }
-
     }
-
-  }
 
   @media only screen and (max-width: 900px) {
     .outer-container {
