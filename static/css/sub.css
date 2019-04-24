@@ -30,7 +30,7 @@ html, body, .content {
   margin-top: 10vh; }
 
 .energy .outer-container {
-  background-color: yellow;
+  background-color: #FDE74C;
   height: 135vh; }
 @media only screen and (max-width: 900px) {
   .energy .outer-container {
@@ -39,7 +39,7 @@ html, body, .content {
     font-size: 9vh; } }
 
 .water .outer-container {
-  background-color: #19d8ff; }
+  background-color: #5BC0EB; }
 @media only screen and (max-width: 900px) {
   .water .outer-container {
     height: 150vh; }
@@ -47,7 +47,7 @@ html, body, .content {
     font-size: 9vh; } }
 
 .food .outer-container {
-  background-color: #5bff63;
+  background-color: #9BC53D;
   height: 90vh; }
 @media only screen and (max-width: 900px) {
   .food .outer-container {
@@ -56,7 +56,7 @@ html, body, .content {
     font-size: 6vh; } }
 
 .waste .outer-container {
-  background-color: #ff8528;
+  background-color: #FA7921;
   height: 90vh; }
 @media only screen and (max-width: 900px) {
   .waste .outer-container {
