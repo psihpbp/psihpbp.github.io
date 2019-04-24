@@ -1,4 +1,10 @@
+html, body, .content {
+  overflow: visible;
+}
+
 .outer-container {
+  overflow-x: initial !important;
+
   #learn_more{
 
     ul {
@@ -51,14 +57,17 @@
 .energy {
   .outer-container {
     background-color: yellow;
-    height: 105vh;
+    //height: 100vh;
     //height: 135vh;
 
     }
 
   @media only screen and (max-width: 900px) {
     .outer-container {
-      height: 135vh;
+      height: 145vh;
+    }
+    .heading{
+      max-font-size: 5vh;
     }
   }
 }
@@ -66,12 +75,15 @@
 .water {
   .outer-container {
     background-color: #19d8ff;
-    height: 100vh;
+    //height: 100vh;
   }
 
   @media only screen and (max-width: 900px) {
     .outer-container {
-      height: 130vh;
+      height: 140vh;
+    }
+    .heading{
+      max-font-size: 5vh;
     }
   }
 }
@@ -84,7 +96,10 @@
 
   @media only screen and (max-width: 900px) {
     .outer-container {
-      height: 100vh;
+      height: 110vh;
+    }
+    .heading{
+      max-font-size: 5vh;
     }
   }
 }
@@ -98,7 +113,11 @@
 
   @media only screen and (max-width: 90px) {
     .outer-container {
-      height: 100vh;
+      height: 110vh;
+
+      .heading{
+        max-font-size: 5vh;
+      }
     }
   }
 }
