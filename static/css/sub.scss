@@ -1,9 +1,11 @@
-html, body, .content {
-  overflow: visible;
+
+body {
+  .contents {
+    overflow-x: visible;
+  }
 }
 
 .outer-container {
-  overflow-x: initial !important;
 
   #learn_more{
 
@@ -74,7 +76,8 @@ html, body, .content {
 .water {
   .outer-container {
     background-color: #5BC0EB;
-    //height: 100vh;
+    max-height: 100vh;
+
   }
 
   @media only screen and (max-width: 900px) {
@@ -90,7 +93,8 @@ html, body, .content {
 .food {
   .outer-container {
     background-color: #9BC53D;
-    height: 90vh;
+    max-height: 90vh;
+
   }
 
   @media only screen and (max-width: 900px) {
@@ -107,7 +111,8 @@ html, body, .content {
 .waste {
   .outer-container {
     background-color: #FA7921;
-    height: 90vh;
+    max-height: 80vh;
+
   }
 
   @media only screen and (max-width: 900px) {

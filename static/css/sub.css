@@ -1,16 +1,14 @@
-html, body, .content {
-  overflow: visible; }
+body .contents {
+  overflow-x: visible; }
 
-.outer-container {
-  overflow-x: initial !important; }
-  .outer-container #learn_more ul li {
-    color: black; }
-  .outer-container #learn_more ul .active {
-    text-shadow: 3px 3px 3px black; }
-  .outer-container #learn_more ul li:hover {
-    border-bottom: 5px solid grey; }
-    .outer-container #learn_more ul li:hover .active {
-      border-bottom: none; }
+.outer-container #learn_more ul li {
+  color: black; }
+.outer-container #learn_more ul .active {
+  text-shadow: 3px 3px 3px black; }
+.outer-container #learn_more ul li:hover {
+  border-bottom: 5px solid grey; }
+  .outer-container #learn_more ul li:hover .active {
+    border-bottom: none; }
 
 .intro {
   top: 8vh;
@@ -39,7 +37,8 @@ html, body, .content {
     font-size: 9vh; } }
 
 .water .outer-container {
-  background-color: #5BC0EB; }
+  background-color: #5BC0EB;
+  max-height: 100vh; }
 @media only screen and (max-width: 900px) {
   .water .outer-container {
     height: 150vh; }
@@ -48,7 +47,7 @@ html, body, .content {
 
 .food .outer-container {
   background-color: #9BC53D;
-  height: 90vh; }
+  max-height: 90vh; }
 @media only screen and (max-width: 900px) {
   .food .outer-container {
     height: 100vh; }
@@ -57,7 +56,7 @@ html, body, .content {
 
 .waste .outer-container {
   background-color: #FA7921;
-  height: 90vh; }
+  max-height: 80vh; }
 @media only screen and (max-width: 900px) {
   .waste .outer-container {
     height: 100vh; }
