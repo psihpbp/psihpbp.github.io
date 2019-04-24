@@ -33,33 +33,33 @@ html, body, .content {
   background-color: yellow; }
 @media only screen and (max-width: 900px) {
   .energy .outer-container {
-    height: 145vh; }
+    height: 165vh; }
   .energy .heading {
-    max-font-size: 5vh; } }
+    font-size: 9vh; } }
 
 .water .outer-container {
   background-color: #19d8ff; }
 @media only screen and (max-width: 900px) {
   .water .outer-container {
-    height: 140vh; }
+    height: 150vh; }
   .water .heading {
-    max-font-size: 5vh; } }
+    font-size: 9vh; } }
 
 .food .outer-container {
   background-color: #5bff63;
   height: 90vh; }
 @media only screen and (max-width: 900px) {
   .food .outer-container {
-    height: 110vh; }
+    height: 100vh; }
   .food .heading {
-    max-font-size: 5vh; } }
+    font-size: 4vh; } }
 
 .waste .outer-container {
   background-color: #ff8528;
-  height: 90vh; }
+  font-size: 9vh; }
 @media only screen and (max-width: 90px) {
   .waste .outer-container {
-    height: 110vh; }
+    height: 100vh; }
     .waste .outer-container .heading {
       max-font-size: 5vh; } }
 

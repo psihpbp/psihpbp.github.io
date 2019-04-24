@@ -64,10 +64,10 @@ html, body, .content {
 
   @media only screen and (max-width: 900px) {
     .outer-container {
-      height: 145vh;
+      height: 165vh;
     }
     .heading{
-      max-font-size: 5vh;
+      font-size: 9vh;
     }
   }
 }
@@ -80,10 +80,10 @@ html, body, .content {
 
   @media only screen and (max-width: 900px) {
     .outer-container {
-      height: 140vh;
+      height: 150vh;
     }
     .heading{
-      max-font-size: 5vh;
+      font-size: 9vh;
     }
   }
 }
@@ -96,10 +96,10 @@ html, body, .content {
 
   @media only screen and (max-width: 900px) {
     .outer-container {
-      height: 110vh;
+      height: 100vh;
     }
     .heading{
-      max-font-size: 5vh;
+      font-size: 4vh;
     }
   }
 }
@@ -108,12 +108,12 @@ html, body, .content {
 .waste {
   .outer-container {
     background-color: #ff8528;
-    height: 90vh;
+    font-size: 9vh;
   }
 
   @media only screen and (max-width: 90px) {
     .outer-container {
-      height: 110vh;
+      height: 100vh;
 
       .heading{
         max-font-size: 5vh;
