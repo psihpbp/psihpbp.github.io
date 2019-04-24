@@ -1,0 +1,54 @@
+.intro {
+  top: 8vh;
+  position: absolute;
+  padding: 10vw;
+  position: absolute;
+  line-height: 25px; }
+
+.heading {
+  color: white;
+  text-shadow: 5px 5px 5px grey; }
+
+.section {
+  margin-bottom: -1vh; }
+
+#footer {
+  margin-top: 10vh; }
+
+.energy .outer-container {
+  background-color: yellow;
+  height: 105vh; }
+  .energy .outer-container #learn_more ul li {
+    color: black; }
+  .energy .outer-container #learn_more ul .active {
+    text-shadow: 3px 3px black; }
+  .energy .outer-container #learn_more ul li:hover {
+    border-bottom: 5px solid grey; }
+    .energy .outer-container #learn_more ul li:hover .active {
+      border-bottom: none; }
+@media only screen and (max-width: 900px) {
+  .energy .outer-container {
+    height: 135vh; } }
+
+.water .outer-container {
+  background-color: #19d8ff;
+  height: 100vh; }
+@media only screen and (max-width: 900px) {
+  .water .outer-container {
+    height: 130vh; } }
+
+.food .outer-container {
+  background-color: #5bff63;
+  height: 90vh; }
+@media only screen and (max-width: 900px) {
+  .food .outer-container {
+    height: 100vh; } }
+
+.waste .outer-container {
+  background-color: #ff8528;
+  height: 90vh; }
+@media only screen and (max-width: 90px) {
+  .waste .outer-container {
+    height: 100vh; } }
+
+/*# sourceMappingURL=sub.css.map */
