@@ -250,12 +250,12 @@ body {
     font-size: 9vw;
     line-height: 1.8; }
   .outer-container #logo {
-    display: block; } }
-@media only screen and (max-width: 1000px) {
+    display: block; }
   .outer-container #scroll {
     transform: translateY(85vh);
     max-height: 75px;
-    animation: float-m 2s ease-in-out infinite; }
+    animation: float-m 2s ease-in-out infinite; } }
+@media only screen and (max-width: 1000px) {
   .outer-container #menu {
     position: absolute;
     top: 5vw;

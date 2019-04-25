@@ -370,12 +370,12 @@ body {
             #logo {
                 display: block;
             }
-        }
 
-        #scroll {
-            transform: translateY(85vh);
-            max-height: 75px;
-            animation: float-m 2s ease-in-out infinite;
+            #scroll {
+                transform: translateY(85vh);
+                max-height: 75px;
+                animation: float-m 2s ease-in-out infinite;
+            }
         }
 
         #menu {
