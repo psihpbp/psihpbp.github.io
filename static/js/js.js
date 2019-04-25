@@ -11,8 +11,12 @@ document.getElementById('menu').addEventListener("click", function(){
     var display = document.getElementById('menu_show').style.display;
     if (display == 'none' || display == ""){
         document.getElementById('menu_show').style.display = "block";
+        $("#menu").removeClass("fa-bars");
+        $("#menu").addClass("fa-times");
     } else {
         document.getElementById('menu_show').style.display = "none";
+        $("#menu").addClass("fa-bars");
+        $("#menu").removeClass("fa-times");
     }
 });
 

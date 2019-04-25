@@ -35,6 +35,18 @@ body {
     }
 }
 
+@keyframes float-m {
+    0% {
+        transform: translateY(85vh);
+    }
+    50% {
+        transform: translateY(87vh);
+    }
+    100% {
+        transform: translateY(85vh);
+    }
+}
+
 .hey {
     font-family: 'Halisr Bold';
     position: absolute;
@@ -361,7 +373,9 @@ body {
         }
 
         #scroll {
-            transform: translateY(90vh);
+            transform: translateY(85vh);
+            max-height: 75px;
+            animation: float-m 2s ease-in-out infinite;
         }
 
         #menu {
@@ -384,6 +398,7 @@ body {
             position: absolute;
             z-index: 10;
             padding-bottom: 5vh;
+            color: white;
 
             .row_container {
                 padding-top: 10vh;

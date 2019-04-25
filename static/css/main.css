@@ -22,6 +22,13 @@ body {
     transform: translateY(71vh); }
   100% {
     transform: translateY(72vh); } }
+@keyframes float-m {
+  0% {
+    transform: translateY(85vh); }
+  50% {
+    transform: translateY(87vh); }
+  100% {
+    transform: translateY(85vh); } }
 .hey {
   font-family: 'Halisr Bold';
   position: absolute;
@@ -246,7 +253,9 @@ body {
     display: block; } }
 @media only screen and (max-width: 1000px) {
   .outer-container #scroll {
-    transform: translateY(90vh); }
+    transform: translateY(85vh);
+    max-height: 75px;
+    animation: float-m 2s ease-in-out infinite; }
   .outer-container #menu {
     position: absolute;
     top: 5vw;
@@ -264,7 +273,8 @@ body {
     transform: translate3d(0, 0, 0);
     position: absolute;
     z-index: 10;
-    padding-bottom: 5vh; }
+    padding-bottom: 5vh;
+    color: white; }
     .outer-container #menu_show .row_container {
       padding-top: 10vh;
       right: 0;
