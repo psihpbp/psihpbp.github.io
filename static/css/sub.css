@@ -32,7 +32,7 @@ body .contents {
   height: 135vh; }
 @media only screen and (max-width: 900px) {
   .energy .outer-container {
-    height: 165vh; }
+    height: 168vh; }
   .energy .heading {
     font-size: 9vh; } }
 
@@ -41,7 +41,7 @@ body .contents {
   max-height: 100vh; }
 @media only screen and (max-width: 900px) {
   .water .outer-container {
-    height: 150vh; }
+    height: 200vh; }
   .water .heading {
     font-size: 9vh; } }
 
@@ -50,7 +50,7 @@ body .contents {
   max-height: 90vh; }
 @media only screen and (max-width: 900px) {
   .food .outer-container {
-    height: 100vh; }
+    height: 120vh; }
   .food .heading {
     font-size: 6vh; } }
 
