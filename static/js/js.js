@@ -1,4 +1,4 @@
-video=document.getElementsByTagName('video');
+var video=document.getElementsByTagName('video');
 function removeControls(video){
   video.removeAttribute('controls');
 }
