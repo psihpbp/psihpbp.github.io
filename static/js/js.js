@@ -1,9 +1,3 @@
-var video=document.getElementsByTagName('video');
-function removeControls(video){
-  video.removeAttribute('controls');
-}
-window.onload=removeControls(video);
-
 function showmenu(){
     var display = document.getElementById('menu_show').style.display;
     if (display == 'none')
