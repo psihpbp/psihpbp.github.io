@@ -29,7 +29,7 @@ body .contents {
 
 .energy .outer-container {
   background-color: #FDE74C;
-  height: 135vh; }
+  height: 118vh; }
 @media only screen and (max-width: 900px) {
   .energy .outer-container {
     height: 168vh; }
