@@ -1,19 +1,8 @@
-@font-face {
-    font-family: "Halisr Reg";
-    src: url('/static/css/webfonts/halisr-regular-webfont.ttf') format('truetype');
-}
-@font-face {
-    font-family: "Halisr Bold";
-    src: url('/static/css/webfonts/halisr-bold-webfont.ttf') format('truetype');
-}
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Halisr Reg', sans-serif;
-
     .contents {
         overflow-x: hidden;
     }
@@ -48,8 +37,9 @@ body {
 }
 
 .hey {
-    font-family: 'Halisr Bold';
     position: absolute;
+    letter-spacing: 0.05em; 
+    font-weight: bold;
     top: 20%;
     left: 25%;
     right: 25%;
@@ -148,7 +138,7 @@ body {
 
 
 .section {
-    padding: 5vw 20vw 1vw 20vw;
+    padding: 2vw 15vw 1vw 15vw;
     text-align: left;
     color: black;
     background-color: white;
@@ -157,16 +147,13 @@ body {
     z-index: 2;
 
     h1 {
-        font-family: 'Halisr Bold';
         text-align: center;
         padding: 2vw;
+        color: #1771a5;
+        font-weight: bold;
     }
 }
 
-
-#mission {
-
-}
 
 #why_matters {
     .right{
@@ -184,6 +171,17 @@ body {
         padding-left: 2vw;
     }
 
+}
+
+#process {
+    .row {
+        margin-left: -5vw;
+        margin-right: -5vw;
+        margin-top: 3vw;
+    }
+    .processTitle {
+        color: green;
+    }
 }
 
 #values {
@@ -242,7 +240,7 @@ body {
     .flip-card {
         background-color: white;
         width: 100%;
-        height: 200px;
+        height: 150px;
         perspective: 1000px; /* Remove this if you don't want the 3D effect */
     }
 
@@ -283,6 +281,10 @@ body {
     }
 }
 
+#mission {
+    padding-top: 3vw;
+}
+
 #who_we_are {
     background-color: white;
     padding-left: 10vw;
@@ -312,7 +314,6 @@ body {
 
 
 #footer {
-    font-family: 'Halisr Bold';
     height: 60vh;
     width: 100vw;
     background-color: #26272d;
@@ -417,7 +418,7 @@ body {
     }
 
     .section {
-        padding: 10vw 10vw 5vw 10vw;
+        padding: 8vw 10vw 5vw 8vw;
     }
 
 }

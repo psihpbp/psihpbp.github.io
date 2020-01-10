@@ -1,37 +1,79 @@
-@font-face {
-  font-family: "Halisr Reg";
-  src: url("/static/css/webfonts/halisr-regular-webfont.ttf") format("truetype"); }
-@font-face {
-  font-family: "Halisr Bold";
-  src: url("/static/css/webfonts/halisr-bold-webfont.ttf") format("truetype"); }
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
-body {
-  font-family: 'Halisr Reg', sans-serif; }
-  body .contents {
-    overflow-x: hidden; }
+body .contents {
+  overflow-x: hidden;
+}
 
 .mobile {
-  display: none; }
+  display: none;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(72vh);
+            transform: translateY(72vh);
+  }
+  50% {
+    -webkit-transform: translateY(71vh);
+            transform: translateY(71vh);
+  }
+  100% {
+    -webkit-transform: translateY(72vh);
+            transform: translateY(72vh);
+  }
+}
 
 @keyframes float {
   0% {
-    transform: translateY(72vh); }
+    -webkit-transform: translateY(72vh);
+            transform: translateY(72vh);
+  }
   50% {
-    transform: translateY(71vh); }
+    -webkit-transform: translateY(71vh);
+            transform: translateY(71vh);
+  }
   100% {
-    transform: translateY(72vh); } }
+    -webkit-transform: translateY(72vh);
+            transform: translateY(72vh);
+  }
+}
+
+@-webkit-keyframes float-m {
+  0% {
+    -webkit-transform: translateY(85vh);
+            transform: translateY(85vh);
+  }
+  50% {
+    -webkit-transform: translateY(87vh);
+            transform: translateY(87vh);
+  }
+  100% {
+    -webkit-transform: translateY(85vh);
+            transform: translateY(85vh);
+  }
+}
+
 @keyframes float-m {
   0% {
-    transform: translateY(85vh); }
+    -webkit-transform: translateY(85vh);
+            transform: translateY(85vh);
+  }
   50% {
-    transform: translateY(87vh); }
+    -webkit-transform: translateY(87vh);
+            transform: translateY(87vh);
+  }
   100% {
-    transform: translateY(85vh); } }
+    -webkit-transform: translateY(85vh);
+            transform: translateY(85vh);
+  }
+}
+
 .hey {
-  font-family: 'Halisr Bold';
   position: absolute;
+  letter-spacing: 0.05em;
+  font-weight: bold;
   top: 20%;
   left: 25%;
   right: 25%;
@@ -41,118 +83,181 @@ body {
   color: white;
   text-shadow: 10px 10px 2px #26272d;
   z-index: 1;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
 .outer-container {
   position: relative;
   width: 100vw;
-  height: 100vh; }
-  .outer-container #scroll {
-    color: white;
-    height: 100vh;
-    text-align: center;
-    z-index: 0;
-    animation: float 2s ease-in-out infinite;
-    transform: translateY(72vh); }
-  .outer-container video {
-    z-index: -2; }
-  .outer-container #drone-video {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%; }
-  .outer-container #logo {
-    background-image: url("/static/media/logo.png");
-    background-size: cover;
-    position: fixed;
-    width: 7vw;
-    height: 7vw;
-    right: 0;
-    bottom: 0;
-    margin: 2vw;
-    z-index: 10; }
-  .outer-container #learn_more {
-    z-index: 20;
-    color: white; }
-    .outer-container #learn_more ul {
-      text-align: center;
-      list-style-type: none;
-      padding-top: 1vw;
-      padding-bottom: 0.4vw; }
-      .outer-container #learn_more ul li {
-        z-index: 100;
-        text-align: center;
-        display: inline-block;
-        font-size: 2vw;
-        padding-bottom: 0.3vh; }
-        .outer-container #learn_more ul li a {
-          text-align: center;
-          margin: 50px 50px;
-          text-decoration: none;
-          color: inherit; }
-        .outer-container #learn_more ul li .active {
-          font-size: 2.5vw;
-          color: lightgoldenrodyellow;
-          text-shadow: 3px 3px grey; }
-      .outer-container #learn_more ul li:hover {
-        padding-bottom: -5px;
-        border-bottom: 5px solid lightgreen; }
-        .outer-container #learn_more ul li:hover .active {
-          border-bottom: none; }
+  height: 100vh;
+}
+
+.outer-container #scroll {
+  color: white;
+  height: 100vh;
+  text-align: center;
+  z-index: 0;
+  -webkit-animation: float 2s ease-in-out infinite;
+          animation: float 2s ease-in-out infinite;
+  -webkit-transform: translateY(72vh);
+          transform: translateY(72vh);
+}
+
+.outer-container video {
+  z-index: -2;
+}
+
+.outer-container #drone-video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.outer-container #logo {
+  background-image: url("/static/media/logo.png");
+  background-size: cover;
+  position: fixed;
+  width: 7vw;
+  height: 7vw;
+  right: 0;
+  bottom: 0;
+  margin: 2vw;
+  z-index: 10;
+}
+
+.outer-container #learn_more {
+  z-index: 20;
+  color: white;
+}
+
+.outer-container #learn_more ul {
+  text-align: center;
+  list-style-type: none;
+  padding-top: 1vw;
+  padding-bottom: 0.4vw;
+}
+
+.outer-container #learn_more ul li {
+  z-index: 100;
+  text-align: center;
+  display: inline-block;
+  font-size: 2vw;
+  padding-bottom: 0.3vh;
+}
+
+.outer-container #learn_more ul li a {
+  text-align: center;
+  margin: 50px 50px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.outer-container #learn_more ul li .active {
+  font-size: 2.5vw;
+  color: lightgoldenrodyellow;
+  text-shadow: 3px 3px grey;
+}
+
+.outer-container #learn_more ul li:hover {
+  padding-bottom: -5px;
+  border-bottom: 5px solid lightgreen;
+}
+
+.outer-container #learn_more ul li:hover .active {
+  border-bottom: none;
+}
 
 .section {
-  padding: 5vw 20vw 1vw 20vw;
+  padding: 2vw 15vw 1vw 15vw;
   text-align: left;
   color: black;
   background-color: white;
   position: static;
   min-width: 100%;
-  z-index: 2; }
-  .section h1 {
-    font-family: 'Halisr Bold';
-    text-align: center;
-    padding: 2vw; }
+  z-index: 2;
+}
+
+.section h1 {
+  text-align: center;
+  padding: 2vw;
+  color: #1771a5;
+  font-weight: bold;
+}
 
 #why_matters .right {
   padding: 0;
-  padding-right: 7vw; }
+  padding-right: 7vw;
+}
+
 #why_matters .left {
   padding: 0;
-  padding-left: 7vw; }
+  padding-left: 7vw;
+}
+
 #why_matters img {
   max-height: 350px;
-  padding-left: 2vw; }
+  padding-left: 2vw;
+}
+
+#process .row {
+  margin-left: -5vw;
+  margin-right: -5vw;
+  margin-top: 3vw;
+}
+
+#process .processTitle {
+  color: green;
+}
 
 #values {
-  text-align: center; }
-  #values .row {
-    text-align: center; }
-    #values .row a:hover {
-      text-decoration: none; }
-    #values .row .card {
-      align-items: center;
-      padding: 20px;
-      border: none; }
-      #values .row .card img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        box-shadow: 5px 5px 5px grey; }
-      #values .row .card img:hover {
-        width: 230px;
-        height: 230px; }
-  #values h2 {
-    color: #0fb758; }
+  text-align: center;
+}
+
+#values .row {
+  text-align: center;
+}
+
+#values .row a:hover {
+  text-decoration: none;
+}
+
+#values .row .card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border: none;
+}
+
+#values .row .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+}
+
+#values .row .card img:hover {
+  width: 230px;
+  height: 230px;
+}
+
+#values h2 {
+  color: #0fb758;
+}
 
 .quote {
   display: block;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#0fb758), to(#10a4b7));
   background-image: linear-gradient(to bottom right, #0fb758, #10a4b7);
   font-size: larger;
   color: white;
-  padding: 1vw; }
+  padding: 1vw;
+}
 
 #clients {
   color: black;
@@ -160,81 +265,121 @@ body {
   /* Do an horizontal flip when you move the mouse over the flip box container */
   /* Position the front and back side */
   /* Style the front side (fallback if image is missing) */
-  /* Style the back side */ }
-  #clients img {
-    margin: 10px; }
-  #clients .flip-card {
-    background-color: white;
-    width: 100%;
-    height: 200px;
-    perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */ }
-  #clients .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d; }
-  #clients .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); }
-  #clients .flip-card-front, #clients .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; }
-  #clients .flip-card-front {
-    background-color: white;
-    color: black; }
-  #clients .flip-card-back {
-    background-color: white;
-    color: black;
-    transform: rotateY(180deg); }
+  /* Style the back side */
+}
+
+#clients img {
+  margin: 10px;
+}
+
+#clients .flip-card {
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+#clients .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#clients .flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#clients .flip-card-front, #clients .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#clients .flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+#clients .flip-card-back {
+  background-color: white;
+  color: black;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#mission {
+  padding-top: 3vw;
+}
 
 #who_we_are {
   background-color: white;
   padding-left: 10vw;
-  padding-right: 10vw; }
-  #who_we_are img {
-    align-self: center;
-    width: 75%;
-    height: auto;
-    margin-bottom: 2vw; }
-  #who_we_are .psiofficial {
-    background-image: url("../media/psi_official.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
-    height: 400px; }
-  #who_we_are p {
-    text-align: left; }
+  padding-right: 10vw;
+}
+
+#who_we_are img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 75%;
+  height: auto;
+  margin-bottom: 2vw;
+}
+
+#who_we_are .psiofficial {
+  background-image: url("../media/psi_official.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 400px;
+}
+
+#who_we_are p {
+  text-align: left;
+}
 
 #footer {
-  font-family: 'Halisr Bold';
   height: 60vh;
   width: 100vw;
   background-color: #26272d;
   bottom: 0;
   border-top: solid 5vh #10a4b7;
   color: white;
-  text-align: left; }
-  #footer .contact {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    background-color: #0fb758;
-    z-index: 10; }
-  #footer .contact:hover {
-    background-color: #10a4b7; }
+  text-align: left;
+}
+
+#footer .contact {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: #0fb758;
+  z-index: 10;
+}
+
+#footer .contact:hover {
+  background-color: #10a4b7;
+}
 
 @media only screen and (max-width: 1000px) {
   .desktop {
-    display: none; }
-
+    display: none;
+  }
   .mobile {
-    display: block; }
-
+    display: block;
+  }
   .outer-container .hey {
     left: 0;
     right: 0;
@@ -242,19 +387,30 @@ body {
     padding: 0;
     font-size: 11vw;
     line-height: 2.5;
-    z-index: 1; }
+    z-index: 1;
+  }
   .outer-container #logo {
-    display: none; } }
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1000px) and (min-width: 600px) {
   .outer-container .hey {
     font-size: 9vw;
-    line-height: 1.8; }
+    line-height: 1.8;
+  }
   .outer-container #logo {
-    display: block; }
+    display: block;
+  }
   .outer-container #scroll {
-    transform: translateY(85vh);
+    -webkit-transform: translateY(85vh);
+            transform: translateY(85vh);
     max-height: 75px;
-    animation: float-m 2s ease-in-out infinite; } }
+    -webkit-animation: float-m 2s ease-in-out infinite;
+            animation: float-m 2s ease-in-out infinite;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .outer-container #menu {
     position: absolute;
@@ -264,7 +420,8 @@ body {
     -webkit-transform: translate3d(0, 0, 1);
     transform: translate3d(0, 0, 0);
     position: absolute;
-    z-index: 12; }
+    z-index: 12;
+  }
   .outer-container #menu_show {
     display: none;
     width: 100vw;
@@ -274,19 +431,22 @@ body {
     position: absolute;
     z-index: 10;
     padding-bottom: 5vh;
-    color: white; }
-    .outer-container #menu_show .row_container {
-      padding-top: 10vh;
-      right: 0;
-      z-index: 100; }
-      .outer-container #menu_show .row_container .row {
-        text-align: center;
-        color: white;
-        font-size: 3vh;
-        display: block;
-        margin: 1vh; }
-
+    color: white;
+  }
+  .outer-container #menu_show .row_container {
+    padding-top: 10vh;
+    right: 0;
+    z-index: 100;
+  }
+  .outer-container #menu_show .row_container .row {
+    text-align: center;
+    color: white;
+    font-size: 3vh;
+    display: block;
+    margin: 1vh;
+  }
   .section {
-    padding: 10vw 10vw 5vw 10vw; } }
-
+    padding: 8vw 10vw 5vw 8vw;
+  }
+}
 /*# sourceMappingURL=main.css.map */

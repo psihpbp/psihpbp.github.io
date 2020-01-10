@@ -1,66 +1,97 @@
 body .contents {
-  overflow-x: visible; }
+  overflow-x: visible;
+}
 
 .outer-container #learn_more ul li {
-  color: black; }
+  color: black;
+}
+
 .outer-container #learn_more ul .active {
-  text-shadow: 3px 3px 3px black; }
+  text-shadow: 3px 3px 3px black;
+}
+
 .outer-container #learn_more ul li:hover {
-  border-bottom: 5px solid grey; }
-  .outer-container #learn_more ul li:hover .active {
-    border-bottom: none; }
+  border-bottom: 5px solid grey;
+}
+
+.outer-container #learn_more ul li:hover .active {
+  border-bottom: none;
+}
 
 .intro {
   top: 8vh;
   position: absolute;
   padding: 10vw;
   position: absolute;
-  line-height: 25px; }
+  line-height: 25px;
+}
 
 .heading {
   color: white;
-  text-shadow: 5px 5px 5px grey; }
+  text-shadow: 5px 5px 5px grey;
+}
 
 .section {
-  margin-bottom: -1vh; }
+  margin-bottom: -1vh;
+}
 
 #footer {
-  margin-top: 10vh; }
+  margin-top: 10vh;
+}
 
 .energy .outer-container {
   background-color: #FDE74C;
-  height: 118vh; }
+  height: 118vh;
+}
+
 @media only screen and (max-width: 900px) {
   .energy .outer-container {
-    height: 168vh; }
+    height: 168vh;
+  }
   .energy .heading {
-    font-size: 9vh; } }
+    font-size: 9vh;
+  }
+}
 
 .water .outer-container {
   background-color: #5BC0EB;
-  max-height: 100vh; }
+  max-height: 100vh;
+}
+
 @media only screen and (max-width: 900px) {
   .water .outer-container {
-    height: 200vh; }
+    height: 200vh;
+  }
   .water .heading {
-    font-size: 9vh; } }
+    font-size: 9vh;
+  }
+}
 
 .food .outer-container {
   background-color: #9BC53D;
-  max-height: 90vh; }
+  max-height: 90vh;
+}
+
 @media only screen and (max-width: 900px) {
   .food .outer-container {
-    height: 120vh; }
+    height: 120vh;
+  }
   .food .heading {
-    font-size: 6vh; } }
+    font-size: 6vh;
+  }
+}
 
 .waste .outer-container {
   background-color: #FA7921;
-  max-height: 80vh; }
+  max-height: 80vh;
+}
+
 @media only screen and (max-width: 900px) {
   .waste .outer-container {
-    height: 100vh; }
-    .waste .outer-container .heading {
-      font-size: 6vh; } }
-
+    height: 100vh;
+  }
+  .waste .outer-container .heading {
+    font-size: 6vh;
+  }
+}
 /*# sourceMappingURL=sub.css.map */
