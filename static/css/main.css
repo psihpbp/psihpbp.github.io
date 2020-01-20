@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body .contents {
+body {
   overflow-x: hidden;
 }
 
