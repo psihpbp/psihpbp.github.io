@@ -1,10 +1,10 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: auto;
 }
 
 body {
   overflow-x: hidden;
-  background-size: cover;
 }
 
 .mobile {
