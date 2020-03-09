@@ -92,6 +92,11 @@ body {
   height: 100vh;
 }
 
+.agreement {
+    background-color: #bbff99;
+    padding: 3vh;
+}
+
 .outer-container #scroll {
   color: white;
   height: 100vh;
@@ -337,6 +342,7 @@ body {
       align-self: center;
   width: 75%;
   height: auto;
+  max-height: 120px;
   margin-bottom: 2vw;
 }
 
