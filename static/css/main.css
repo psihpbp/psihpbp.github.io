@@ -88,7 +88,6 @@ body {
 }
 
 .outer-container {
-  position: relative;
   width: 100vw;
   height: 100vh;
   margin-bottom: 5vh;
