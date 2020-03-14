@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+ 
 }
 
 .mobile {
@@ -91,6 +91,10 @@ body {
   width: 100vw;
   height: 100vh;
   margin-bottom: 5vh;
+}
+
+.vid {
+    position: relative;
 }
 
 #process .agreement {
