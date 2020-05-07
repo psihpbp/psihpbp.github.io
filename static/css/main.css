@@ -97,11 +97,6 @@ body {
   margin-bottom: 1vh;
 }
 
-.vid {
-  height: 100vh;
-  position: relative;
-}
-
 #process .agreement {
     margin-top: 2vh;
     background-color: #bbff99;
@@ -516,5 +511,10 @@ body {
 
 #journey-footer .contact:hover {
   background-color: black;
+}
+
+.vid {
+  height: 100vh;
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
