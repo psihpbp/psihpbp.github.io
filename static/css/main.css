@@ -98,7 +98,8 @@ body {
 }
 
 .vid {
-    position: relative;
+  height: 100vh;
+  position: relative;
 }
 
 #process .agreement {
