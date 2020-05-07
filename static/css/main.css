@@ -95,7 +95,7 @@ body {
 .outer-container {
   width: 100vw;
   height: 100vh;
-  margin-bottom: 5vh;
+  margin-bottom: 1vh;
 }
 
 .vid {
@@ -487,6 +487,10 @@ body {
 .journey-start {
   color: white;
   background: none;
+}
+
+.tips {
+  border-top: 3px solid lightgreen;
 }
 
 .journeybg {
