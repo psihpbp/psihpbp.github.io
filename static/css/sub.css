@@ -3,7 +3,7 @@ body .contents {
 }
 
 .outer-container {
-    bottom-margin: 5vh;
+    /* margin-bottom: 5vh; */
     height: 100vh;
 }
 
@@ -15,9 +15,9 @@ body .contents {
   text-shadow: 3px 3px 3px black;
 }
 
-.outer-container #learn_more ul li:hover {
+/* .outer-container #learn_more ul li:hover {
   border-bottom: 5px solid grey;
-}
+} */
 
 .outer-container #learn_more ul li:hover .active {
   border-bottom: none;

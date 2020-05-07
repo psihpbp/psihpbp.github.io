@@ -28,6 +28,9 @@ var drone_video = document.getElementById("drone-video");
 
 $(document).ready( function() {
     var offsets = document.getElementById('footer').getBoundingClientRect();
+    if (offsets == null) {
+        offsets = document.getElementById('journey-footer').getBoundingClientRect();
+    }
     $(window).scroll(function() {
         if ($(window).scrollTop() > 20) {
             if (drone_video)
