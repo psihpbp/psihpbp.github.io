@@ -94,7 +94,6 @@ body {
 
 .outer-container {
   width: 100vw;
-  height: 100vh;
   margin-bottom: 1vh;
 }
 
@@ -478,7 +477,6 @@ body {
   right: 25%;
   padding: 2vw;
   text-align: center;
-  font-size: 4vw;
   line-height: 1.5;
   color: whitesmoke;
   text-shadow: 10px 10px 2px rgba(255, 255, 255, 0.2);
@@ -489,9 +487,9 @@ body {
   background: none;
 }
 
-.tips {
+/* .tips {
   border-top: 3px solid lightgreen;
-}
+} */
 
 .journeybg {
   background: #26272d;
